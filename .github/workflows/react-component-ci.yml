@@ -59,8 +59,8 @@ jobs:
         run: npm run lint
 
       # 不需要打包，在 publish 之前会先 compile
-      # - name: 打包 🏗️
-      #   run: npm run compile
+      - name: 打包 🏗️
+        run: npm run compile
 
       # 发布
       - name: 发布 🚀
