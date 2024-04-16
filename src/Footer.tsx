@@ -34,7 +34,7 @@ export default function Footer({
     },
     {
       name: 'Hank-Design',
-      link: 'https://hankliu62.github.io/hankliu-ui/',
+      link: 'https://hankliu62.github.io/hankliu-ui/index-cn/',
     },
     {
       name: '中午吃什么',
