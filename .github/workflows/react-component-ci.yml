@@ -129,15 +129,15 @@ jobs:
           path: node_modules
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
-      # 打包
-      - name: 打包 🏗️
-        run: npm run compile
+      # 不需要打包，在 publish 之前会先 compile
+      # - name: 打包 🏗️
+      #   run: npm run compile
 
       # 发布
       - name: 发布 🚀
-        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
 
     needs: coverage
 
