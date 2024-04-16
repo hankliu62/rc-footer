@@ -137,8 +137,8 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
       # 不需要打包，在 publish 之前会先 compile
-      - name: 打包 🏗️
-        run: npm run compile
+      # - name: 打包 🏗️
+      #   run: npm run compile
 
       # 发布
       - name: 发布 🚀
@@ -191,15 +191,15 @@ jobs:
 
       - name: 从 package.json 中获得版本 ⭐
         id: version
-        run: echo ::set-output name=VERSION::$(node -e "console.log(require('./package.json').version)")
+        run: echo `VERSION=$(node -e "console.log(require('./package.json').version)")` >> $GITHUB_OUTPUT
 
       - name: 创建 Tag 🌕
         id: tag
         run: |
-          git tag v${{ steps.version.outputs.VERSION }}
-          echo "::set-output name=TAG_VERSION::v${{ steps.version.outputs.VERSION }}"
+          git tag v${{ steps.version.outputs.VERSION }} -m "create tag v${{ steps.version.outputs.VERSION }}"
+          echo "TAG_VERSION=v${{ steps.version.outputs.VERSION }}" >> $GITHUB_OUTPUT
 
       - name: 提交 Tag 🏄
-        run: git push origin v${{ steps.tag.outputs.VERSION }}
+        run: git push origin ${{ steps.tag.outputs.TAG_VERSION }}
 
     needs: site
