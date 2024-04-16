@@ -1,6 +1,6 @@
 {
   "name": "@hankliu/rc-footer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "React easy to use footer component",
   "keywords": [
@@ -31,6 +31,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "compile": "father build && lessc assets/index.less assets/index.css",
+    "prepublishOnly": "npm run compile && np patch --yolo --no-publish --any-branch",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "test": "rc-test -u",
