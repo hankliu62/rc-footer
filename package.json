@@ -1,6 +1,6 @@
 {
   "name": "@hankliu/rc-footer",
-  "version": "0.0.2-beta.0",
+  "version": "0.0.2-beta.1",
   "private": false,
   "description": "React easy to use footer component",
   "keywords": [
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/hankliu62/rc-footer",
   "repository": {
     "type": "git",
-    "url": "git@github.com:hankliu62/rc-footer.git"
+    "url": "git+https://git@github.com/hankliu62/rc-footer.git"
   },
   "bugs": {
     "url": "http://github.com/hankliu62/rc-footer/issues"
