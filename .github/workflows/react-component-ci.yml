@@ -66,7 +66,7 @@ jobs:
       - name: 发布 🚀
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
+        run: npm publish --access public --tag beta
 
   coverage:
     runs-on: ubuntu-latest
