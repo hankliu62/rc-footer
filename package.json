@@ -1,6 +1,7 @@
 {
-  "name": "hank-test",
+  "name": "@hankliu/rc-footer",
   "version": "0.0.1",
+  "private": false,
   "description": "React easy to use footer component",
   "keywords": [
     "react",

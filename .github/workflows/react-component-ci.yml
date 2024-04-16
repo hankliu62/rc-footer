@@ -137,7 +137,7 @@ jobs:
       - name: 发布 🚀
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: npm publish --access public
 
     needs: coverage
 
