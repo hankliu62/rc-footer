@@ -179,6 +179,7 @@ export default function Footer({
                       className={`${prefixCls}-box-top-content-list-item-links-link-href`}
                       href="https://hankliu62.github.io/frontend/terms"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       服务协议
                     </a>
@@ -188,6 +189,7 @@ export default function Footer({
                       className={`${prefixCls}-box-top-content-list-item-links-link-href`}
                       href="https://hankliu62.github.io/frontend/privacy"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       隐私政策
                     </a>

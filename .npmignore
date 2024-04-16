@@ -51,3 +51,5 @@ LICENSE.md
 now.json
 tsconfig.json
 update-example.js
+
+.env.local

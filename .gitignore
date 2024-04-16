@@ -45,3 +45,4 @@ es/
 
 pnpm-lock.yaml
 .vscode
+.env.local
