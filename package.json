@@ -1,6 +1,6 @@
 {
-  "name": "@hankliu/rc-footer",
-  "version": "0.0.2",
+  "name": "hank-test",
+  "version": "0.0.1",
   "description": "React easy to use footer component",
   "keywords": [
     "react",
@@ -67,8 +67,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.4.5"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
