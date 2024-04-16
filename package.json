@@ -45,7 +45,7 @@
     "@babel/runtime": "^7.24.4",
     "@rc-component/portal": "^1.1.2",
     "classnames": "^2.5.1",
-    "rc-tooltip": "~5.2.2"
+    "rc-tooltip": "~6.2.0"
   },
   "devDependencies": {
     "@ant-design/icons": "^5.3.6",
