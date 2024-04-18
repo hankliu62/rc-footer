@@ -1,18 +1,37 @@
 # @hankliu/rc-footer
 
-HankLiu UI React Footer Component.
+[![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
+[![build status][github-actions-image]][github-actions-url]
+[![Codecov][codecov-image]][codecov-url]
+[![bundle size][bundlephobia-image]][bundlephobia-url]
+[![dumi][dumi-image]][dumi-url]
 
-## Feature
+[npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@hankliu/rc-footer
+[travis-image]: https://img.shields.io/travis/hankliu62/rc-footer/master?style=flat-square
+[github-actions-image]: https://github.com/hankliu62/rc-footer/workflows/CI/badge.svg
+[github-actions-url]: https://github.com/hankliu62/rc-footer/actions
+[codecov-image]: https://img.shields.io/codecov/c/github/hankliu62/rc-footer/master.svg?style=flat-square
+[codecov-url]: https://app.codecov.io/gh/hankliu62/rc-footer
+[download-image]: https://img.shields.io/npm/dm/@hankliu/rc-footer.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@hankliu/rc-footer
+[bundlephobia-url]: https://bundlephobia.com/package/@hankliu/rc-footer
+[bundlephobia-image]: https://badgen.net/bundlephobia/minzip/@hankliu/rc-footer
+[dumi-url]: https://github.com/umijs/dumi
+[dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
 
-- [x] Placeholder
-- [x] Preview
-- [x] Rotate
-- [x] Zoom
-- [x] Flip
-- [x] Fallback
-- [x] Multiple Preview
+在 `HankLiu WebApp` 页面中使用的通用的 `Footer` 组件，包含 `Logo`，产品矩阵，联系我们，关于产品等模块内容。
 
-## install
+## 功能特征
+
+- [x] Logo
+- [x] 产品矩阵
+- [x] 联系我们
+- [x] 关于产品
+
+## 安装
+
 ``` bash
 npm install @hankliu/rc-footer --save
 ```
