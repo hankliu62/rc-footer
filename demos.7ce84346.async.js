@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_hankliu_rc_footer=self.webpackChunk_hankliu_rc_footer||[]).push([[433],{6536:function(E,_,n){n.r(_),n.d(_,{default:function(){return u}});var s=n(74123),a=n(67294),f=n(69945),t=n(85893);function u(){return(0,t.jsx)("div",{children:(0,t.jsx)(s.default,{})})}}}]);
