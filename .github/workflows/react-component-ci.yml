@@ -13,7 +13,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 指定node版本
       - name: Node环境版本 🗜️
@@ -59,7 +59,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 获取或存的lock文件
       - name: 获取lock文件 🎻
@@ -86,7 +86,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 获取或存的lock文件
       - name: 获取lock文件 🎻
@@ -120,7 +120,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 指定node版本
       - name: Node环境版本 🗜️
@@ -160,7 +160,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # 获取或存的lock文件
       - name: 获取lock文件 🎻
@@ -194,7 +194,7 @@ jobs:
     steps:
       # 将代码拉到虚拟机
       - name: 获取源码 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 从 package.json 中获得版本 ⭐
         id: version
