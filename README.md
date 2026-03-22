@@ -1,11 +1,6 @@
 # @hankliu/rc-footer
 
-[![NPM version][npm-image]][npm-url]
-[![npm download][download-image]][download-url]
-[![build status][github-actions-image]][github-actions-url]
-[![Codecov][codecov-image]][codecov-url]
-[![bundle size][bundlephobia-image]][bundlephobia-url]
-[![dumi][dumi-image]][dumi-url]
+[![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url] [![Codecov][codecov-image]][codecov-url] [![bundle size][bundlephobia-image]][bundlephobia-url] [![dumi][dumi-image]][dumi-url]
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@hankliu/rc-footer
@@ -21,7 +16,7 @@
 [dumi-url]: https://github.com/umijs/dumi
 [dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
 
-在 `HankLiu WebApp` 页面中使用的通用的 `Footer` 组件，包含 `Logo`，产品矩阵，联系我们，关于产品等模块内容。
+🥭 在 `HankLiu WebApp` 页面中使用的通用的 `Footer` 组件，包含 `Logo`，产品矩阵，联系我们，关于产品等模块内容。
 
 ## 功能特征
 
@@ -32,23 +27,23 @@
 
 ## 安装
 
-``` bash
+```bash
 npm install @hankliu/rc-footer --save
 ```
 
 or
 
-``` bash
+```bash
 yarn add @hankliu/rc-footer
 ```
 
 or
 
-``` bash
+```bash
 pnpm install @hankliu/rc-footer
 ```
 
-## Usage
+## 使用
 
 ```bash
 npm install
@@ -58,38 +53,36 @@ npm start
 ```js
 import Footer from '@hankliu/rc-footer';
 
-export default () => (
-  <Footer />
-);
+export default () => <Footer />;
 ```
 
-## API
+## API 参数
 
-| 名称 | 类型 | 默认值 | 描述 |
+| 名称 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| className | string | - | 组件外层元素classname |
-| prefixCls | string | hlui-footer | 组件外层元素 classname 前缀 |
-| productLinks | `Array<{ name: string, link: string}>` | 默认值在如下所示 | 产品列表 |
+| className | 组件外层元素 Class | string | - |
+| prefixCls | 组件外层元素 Class 前缀 | string | hlui-footer |
+| productLinks | 产品矩阵列表 | `Array<{ name: string, link: string}>` | 默认值在如下所示 |
 
 #### productLinks 参数默认值
 
-``` ts
+```ts
 [
   {
-    name: '设计动画',
-    link: 'https://hankliu62.github.io/icss/',
+    name: '前端集合',
+    link: 'https://hankliu62.github.io/frontend/',
   },
   {
     name: '个人简历',
     link: 'https://hankliu62.github.io/resume/',
   },
   {
-    name: '面试宝典',
-    link: 'https://hankliu62.github.io/interview/',
+    name: '开发工具',
+    link: 'https://hankliu62.github.io/developer-tools/',
   },
   {
     name: 'Hank-Design',
-    link: 'https://hankliu62.github.io/hankliu-ui/',
+    link: 'https://hankliu62.github.io/hankliu-ui/index-cn/',
   },
   {
     name: '中午吃什么',
@@ -99,7 +92,7 @@ export default () => (
     name: '懒人选择器',
     link: 'https://hankliu62.github.io/lucky-choose/',
   },
-]
+];
 ```
 
 ## 案例

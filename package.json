@@ -9,6 +9,15 @@
     "react-footer",
     "footer"
   ],
+  "homepage": "https://github.com/hankliu62/rc-footer",
+  "bugs": {
+    "url": "http://github.com/hankliu62/rc-footer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/hankliu62/rc-footer.git"
+  },
+  "license": "MIT",
   "main": "./lib/index",
   "module": "./es/index",
   "types": "./lib/index.d.ts",
@@ -17,30 +26,17 @@
     "es",
     "lib"
   ],
-  "homepage": "https://github.com/hankliu62/rc-footer",
-  "repository": {
-    "type": "git",
-    "url": "git+https://git@github.com/hankliu62/rc-footer.git"
-  },
-  "bugs": {
-    "url": "http://github.com/hankliu62/rc-footer/issues"
-  },
-  "license": "MIT",
   "scripts": {
-    "start": "dumi dev",
+    "compile": "father build && lessc assets/index.less assets/index.css",
+    "coverage": "rc-test -u --coverage",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "compile": "father build && lessc assets/index.less assets/index.css",
-    "prepublishOnlyNot": "npm run compile && np patch --yolo --no-publish --any-branch",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
-    "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "test": "rc-test -u",
-    "coverage": "rc-test -u --coverage",
-    "now-build": "npm run docs:build"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "now-build": "npm run docs:build",
+    "prepublishOnlyNot": "npm run compile && np patch --yolo --no-publish --any-branch",
+    "prettier": "prettier --write \"./(src|test|docs)/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "start": "dumi dev",
+    "test": "rc-test -u"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.4",
@@ -49,7 +45,6 @@
     "rc-tooltip": "~5.2.2"
   },
   "devDependencies": {
-    "@ant-design/icons": "^5.3.6",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^15.0.2",
     "@types/classnames": "^2.3.0",
@@ -68,5 +63,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   }
 }

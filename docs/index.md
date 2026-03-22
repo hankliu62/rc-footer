@@ -1,7 +1,7 @@
 ---
 hero:
   title: @hankliu/rc-footer
-  description: HankLiu UI Footer.
+  description: React Footer Component.
 ---
 
 <embed src="../README.md"></embed>
